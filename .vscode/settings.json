@@ -1,0 +1,27 @@
+{
+    // Live Sass Compiler
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [],
+
+    // Output CSS as compressed in /src/css
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/src/css"
+        }
+        ,
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/src/css"
+        }
+    ],
+
+    // Optional: exclude folders from watch
+    "liveSassCompile.settings.excludeList": [
+        "/node_modules/**",
+    
+    ]
+    
+}

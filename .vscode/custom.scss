@@ -1,0 +1,462 @@
+// Theme color variables
+
+
+
+/* SCSS HEX */
+$pink-carnation: #f27fb1ff;
+$snow: #faf3f1ff;
+$alabaster-grey: #d2dbd4ff;
+$muted-teal: #8fb7b5ff;
+$deep-teal: #4f7f77ff;
+$dark-slate-grey: #2c4c4aff;
+$rosy-copper: #c05547ff;
+$shadow-grey: #25201fff;
+
+/* SCSS HSL */
+$pink-carnation: hsla(334, 82%, 72%, 1);
+$snow: hsla(13, 47%, 96%, 1);
+$alabaster-grey: hsla(133, 11%, 84%, 1);
+$muted-teal: hsla(177, 22%, 64%, 1);
+$deep-teal: hsla(170, 23%, 40%, 1);
+$dark-slate-grey: hsla(176, 27%, 24%, 1);
+$rosy-copper: hsla(7, 49%, 52%, 1);
+$shadow-grey: hsla(10, 9%, 13%, 1);
+
+/* SCSS RGB */
+$pink-carnation: rgba(242, 127, 177, 1);
+$snow: rgba(250, 243, 241, 1);
+$alabaster-grey: rgba(210, 219, 212, 1);
+$muted-teal: rgba(143, 183, 181, 1);
+$deep-teal: rgba(79, 127, 119, 1);
+$dark-slate-grey: rgba(44, 76, 74, 1);
+$rosy-copper: rgba(192, 85, 71, 1);
+$shadow-grey: rgba(37, 32, 31, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-right: linear-gradient(90deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-bottom: linear-gradient(180deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-left: linear-gradient(270deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-top-right: linear-gradient(45deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-bottom-right: linear-gradient(135deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-top-left: linear-gradient(225deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-bottom-left: linear-gradient(315deg, #f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$gradient-radial: radial-gradient(#f27fb1ff, #faf3f1ff, #d2dbd4ff, #8fb7b5ff, #4f7f77ff, #2c4c4aff, #c05547ff, #25201fff);
+$bg-light: #d2dbd4;
+$bg-dark: #2c4c4a;
+$headings-font-family: "Crimson Text",
+serif;
+$display-font-family: "Neucha",
+cursive;
+
+
+
+// Bootstrap Sass theme color overrides
+$primary: #2c4c4a;
+$secondary:#d2dbd4;
+$success: #8fb7b5;
+$info: #4f7f77;
+$warning: #c05547;
+$danger: #f27fb1;
+$light: #d2dbd4;
+$dark: #25201f;
+
+$navbar-brand-font-size: 2.2rem;
+
+$theme-colors: ("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark);
+
+@use "../node_modules/bootstrap/scss/bootstrap"with ($primary: $primary,
+    $secondary: $secondary,
+    $success: $success,
+    $info: $info,
+    $warning: $warning,
+    $danger: $danger,
+    $light: $light,
+    $dark: $dark,
+    $headings-font-family: $headings-font-family,
+    $display-font-family: $display-font-family,
+    $theme-colors: $theme-colors,
+    $navbar-brand-font-size: $navbar-brand-font-size);
+
+:root {
+    --bs-font-sans-serif: "Quicksand", Arial, sans-serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-line-height: 1.6;
+    --bs-body-bg: #faf3f1;
+    --bs-primary: #2c4c4a;
+    ;
+    --bs-secondary: #d2dbd4;
+    --bs-success: #8fb7b5;
+    --bs-info: #4f7f77;
+    --bs-warning: #c05547;
+    --bs-danger: #f27fb1;
+    --bs-light: #d2dbd4;
+    --bs-dark: #2c4c4a;
+
+    --dg-white: #faf3f1;
+    --dg-carnation: #f27fb1;
+    --dg-lt-seafoam: #dde2dc;
+    --dg-dk-seafoam: #d2dbd4;
+    --dg-peacegreen: #8fb7b5;
+    --dg-lt-forest: #4f7f77;
+    --dg-dk-forest: #2c4c4a;
+    --dg-impact: #c05547;
+    --dg-black: #25201f;
+
+    /* CSS HEX */
+    --pink-carnation: #f27fb1ff;
+    --snow: #faf3f1ff;
+    --alabaster-grey: #d2dbd4ff;
+    --muted-teal: #8fb7b5ff;
+    --deep-teal: #4f7f77ff;
+    --dark-slate-grey: #2c4c4aff;
+    --rosy-copper: #c05547ff;
+    --shadow-grey: #25201fff;
+
+    /* CSS HSL */
+    --pink-carnation: hsla(334, 82%, 72%, 1);
+    --snow: hsla(13, 47%, 96%, 1);
+    --alabaster-grey: hsla(133, 11%, 84%, 1);
+    --muted-teal: hsla(177, 22%, 64%, 1);
+    --deep-teal: hsla(170, 23%, 40%, 1);
+    --dark-slate-grey: hsla(176, 27%, 24%, 1);
+    --rosy-copper: hsla(7, 49%, 52%, 1);
+    --shadow-grey: hsla(10, 9%, 13%, 1);
+
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: var(--bs-info);
+
+    // Root button variables
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-font-family: var(--bs-font-sans-serif);
+    --bs-btn-font-weight: 600;
+    --bs-btn-line-height: 1.2;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-radius: 0.5rem;
+    --bs-btn-focus-box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+    --bs-btn-disabled-opacity: 0.65;
+
+    --bs-navbar-brand-font-size: 2.2rem;
+}
+
+$dg-colors: (white: var(--dg-white),
+    lt-seafoam: var(--dg-lt-seafoam),
+    dk-seafoam: var(--dg-dk-seafoam),
+    carnation: var(--dg-carnation),
+    lt-forest: var(--dg-lt-forest),
+    dk-forest: var(--dg-dk-forest),
+    peacegreen: var(--dg-peacegreen),
+    impact: var(--dg-impact),
+    black: var(--dg-black));
+
+@mixin bg-color($name, $value) {
+    .bg-#{$name} {
+        background-color: $value !important;
+    }
+}
+
+@each $name,
+$value in $dg-colors {
+    @include bg-color($name, $value);
+}
+
+// Font override classes
+$crimson-text: (regular: (family: "Crimson Text", weight: 400, style: normal),
+    semibold: (family: "Crimson Text", weight: 600, style: normal),
+    bold: (family: "Crimson Text", weight: 700, style: normal),
+    regular-italic: (family: "Crimson Text", weight: 400, style: italic),
+    semibold-italic: (family: "Crimson Text", weight: 600, style: italic),
+    bold-italic: (family: "Crimson Text", weight: 700, style: italic));
+
+$quicksand: (light: (family: "Quicksand", weight: 100, style: normal, optical: auto),
+    regular: (family: "Quicksand", weight: 400, style: normal, optical: auto),
+    medium: (family: "Quicksand", weight: 500, style: normal, optical: auto),
+    bold: (family: "Quicksand", weight: 800, style: normal, optical: auto));
+
+.neucha {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-settings($settings) {
+    font-family: map-get($settings, family);
+    font-weight: map-get($settings, weight);
+    font-style: map-get($settings, style);
+
+    @if map-has-key($settings, optical) {
+        font-optical-sizing: map-get($settings, optical);
+    }
+}
+
+@each $name,
+$settings in $crimson-text {
+    .crimson-text-#{$name} {
+        @include font-settings($settings);
+    }
+}
+
+@each $name,
+$settings in $quicksand {
+    .quicksand-#{$name} {
+        @include font-settings($settings);
+    }
+}
+
+
+
+.font-sans {
+    font-family: var(--bs-font-sans-serif) !important;
+}
+
+.font-heading {
+    @include font-settings(map-get($crimson-text, regular));
+}
+
+.font-body {
+    @include font-settings(map-get($quicksand, regular));
+}
+
+.font-body-lite {
+    @include font-settings(map-get($quicksand, light));
+}
+
+.font-body-bold {
+    @include font-settings(map-get($quicksand, bold));
+}
+
+.font-body-medium {
+    @include font-settings(map-get($quicksand, medium));
+}
+
+// Color override classes
+.text-brand {
+    color: var(--bs-primary) !important;
+}
+
+.navbar-brand {
+    font-family: "Neucha", cursive;
+    font-size: $navbar-brand-font-size;
+
+    @include bootstrap.media-breakpoint-down(sm) {
+        font-size: 1.018rem;
+    }
+}
+
+.dg-icon {
+    color: var(--dg-dk-forest) !important;
+}
+
+.dg-social-icon {
+
+    background-color: var(--dg-dk-forest) !important;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.375rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dg-dk-seafoam);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.dg-social-icon:hover {
+
+    background-color: var(--dg-impact) !important;
+    color: var(--dg-white) !important;
+    cursor: pointer;
+
+}
+
+
+/// Background color utility classes
+.bg-brand {
+    background-color: var(--bs-primary) !important;
+    color: #fff !important;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.bg-light {
+    background-color: var(--bs-light) !important;
+}
+
+.border-brand {
+    border-color: var(--bs-primary) !important;
+}
+
+.flag-light {
+    background-color: var(--dg-white) !important;
+    border-left: var(--dg-impact) solid 4px !important;
+    border-radius: 0 5rem 5rem 0 !important;
+    padding: .575rem .675rem !important;
+
+}
+
+.flag-dark {
+    background-color: var(--dg-lt-seafoam) !important;
+    color: var(--dg-dk-forest) !important;
+    border-left: var(--dg-impact) solid 4px !important;
+    border-radius: 0 5rem 5rem 0 !important;
+    padding: .575rem .675rem !important;
+
+}
+
+// Link color utility classes
+.link-primary {
+    color: var(--bs-primary) !important;
+    text-decoration-color: var(--bs-primary) !important;
+}
+
+.link-primary:hover {
+    color: var(--bs-info) !important;
+    text-decoration-color: var(--bs-info) !important;
+}
+
+.link-secondary {
+    color: var(--bs-secondary) !important;
+    text-decoration-color: var(--bs-secondary) !important;
+}
+
+.link-success {
+    color: var(--bs-success) !important;
+    text-decoration-color: var(--bs-success) !important;
+}
+
+.link-info {
+    color: var(--bs-info) !important;
+    text-decoration-color: var(--bs-info) !important;
+}
+
+.link-warning {
+    color: var(--bs-warning) !important;
+    text-decoration-color: var(--bs-warning) !important;
+}
+
+.link-danger {
+    color: var(--bs-danger) !important;
+    text-decoration-color: var(--bs-danger) !important;
+}
+
+.link-light {
+    color: var(--bs-light) !important;
+    text-decoration-color: var(--bs-light) !important;
+}
+
+.link-dark {
+    color: var(--bs-dark) !important;
+    text-decoration-color: var(--bs-dark) !important;
+}
+
+// Button override class
+.btn {
+    --bs-btn-padding-x: 0.75rem;
+     --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: var(--bs-font-sans-serif);
+    --bs-btn-font-weight: 600;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-border-radius: 2rem;
+    --bs-btn-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+.btn-brand {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #4338ca;
+    --bs-btn-hover-border-color: #4338ca;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #3730a3;
+    --bs-btn-active-border-color: #3730a3;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--dg-white);
+    --bs-btn-bg: var(--dg-impact);
+    --bs-btn-border-color: var(--dg-impact);
+    --bs-btn-hover-color: var(--dg-impact);
+    --bs-btn-hover-bg: var(--dg-white);
+    --bs-btn-hover-border-color: var(--dg-impact);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2c4c4a;
+    --bs-btn-active-border-color: #2c4c4a;
+}
+
+.btn-secondary {
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bs-dark);
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-info);
+    --bs-btn-hover-border-color: var(--bs-info);
+    --bs-btn-active-color: var(--bs-dark);
+    --bs-btn-active-bg: #a8b1a9;
+    --bs-btn-active-border-color: #a8b1a9;
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--dg-impact);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--dg-impact);
+    --bs-btn-hover-color: var(--dg-white);
+    --bs-btn-hover-bg: var(--dg-impact);
+    --bs-btn-hover-border-color: var(--dg-impact);
+    --bs-btn-active-color: var(--dg-white);
+    --bs-btn-active-bg: var(--dg-impact);
+    --bs-btn-active-border-color: var(--dg-impact);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-dark);
+    --bs-btn-hover-border-color: var(--bs-dark);
+    --bs-btn-active-color: var(--bs-white);
+    --bs-btn-active-bg: var(--bs-dark);
+    --bs-btn-active-border-color: var(--bs-dark);
+}
+.btn-dark {
+    --bs-btn-color: var(--dg-white);
+    --bs-btn-bg: var(--bs-dark);
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: var(--dg-white);
+    --bs-btn-hover-bg: var(--dg-dk-forest);
+    --bs-btn-hover-border-color: var(--dg-dk-forest);
+    --bs-btn-active-color: var(--dg-white);
+    --bs-btn-active-bg: var(--dg-black);
+    --bs-btn-active-border-color: var(--dg-black);
+}
+
+.btn-outline-dark {
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: var(--dg-white);
+    --bs-btn-hover-bg: var(--bs-dark);
+    --bs-btn-hover-border-color: var(--bs-dark);
+    --bs-btn-active-color: var(--dg-white);
+    --bs-btn-active-bg: var(--dg-black);
+    --bs-btn-active-border-color: var(--dg-black);
+}
+.btn-sm {
+    --bs-btn-padding-x: 0.6rem;
+    --bs-btn-padding-y: 0.6rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 1.5rem;
+    --bs-btn-line-height: 1rem;
+}
+
+.btn-lg {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: 2.5rem;
+    --bs-btn-line-height: 1.8rem;
+}
